@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+            <div class="close-bar">
+                <a onclick="hideSidebar()" href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close-icon" width="26" height="26"></a>
+            </div>
+            <a  class="listSB list1" href="index.html">Home</a>
+            <a  class="listSB list2" href="about.html">About</a>
+            <a  class="listSB list3" href="#">Gallery</a>
+        </div>
+        <div class="nav-list">
+            <a  class="list list1" href="index.html">Home</a>
+            <a  class="list list2" href="about.html">About</a>
+            <a  class="list list3" href="#">Gallery</a>
+            <div class="menu-button">
+                <a onclick="showSidebar()" href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-icon" width="26" height="26"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="profile-section">
+            <div class="profile-picture">
+                <img class="pfp" src="pfp.jpg" alt="profile_picture" width="200vw" height="auto">
+            </div>
+            <div class="description">
+                <p class="intro-text">Hello I'm</p>
+                <h1 class="opening-remarks">Gerald</h1>
+                <p class="intro-text">17 years old<br>highschool student.<br>
+                    Based in Indonesia
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

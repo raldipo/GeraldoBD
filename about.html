@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="sidebar-wrapper">
+
+            <div class="sidebar">
+                <div class="close-bar">
+                    <a onclick="hideSidebar()" href="#"><img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close-icon" width="26" height="26"></a>
+                </div>
+                <a  class="listSB list1" href="index.html">Home</a>
+                <a  class="listSB list2" href="about.html">About</a>
+                <a  class="listSB list3" href="#">Gallery</a>
+            </div>
+        </div>
+        <div class="nav-list">
+            <a  class="list list1" href="index.html">Home</a>
+            <a  class="list list2" href="about.html">About</a>
+            <a  class="list list3" href="#">Gallery</a>
+            <div class="menu-button">
+                <a onclick="showSidebar()" href="#"><img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="menu-icon" width="26" height="26"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="about-section">
+            <div class="image-wrapper">
+                <img class="profile-image" src="pfp.jpg" alt="profile_picture" width="200" height="200">
+            </div>
+            <div class="text-wrapper">
+                <p class="about-text">I'm Geraldo Brazilio Dego, a highschool student who love explore a new thing.<br>
+                    Between assignments, I spend my time on photography and coding.<br>This website is my space to put my work.
+                    it's still far from perfect,<br> but every piece is part of the journey!
+                </p>
+                <p class="email-text">Email Me : <a href="mailto:geraldbraziliodego@gmail.com">geraldbraziliodego@gmail.com</a></p>
+                <div class="social-wrapper">
+                    <a href="https://www.instagram.com/jerarudb/?igsh=ZTI1ZDV4Y204ZG5i" target="_blank"><i class="fa-brands fa-instagram ig-logo"></i></a>
+                    <a href="https://github.com/raldipo" target="_blank"><i class="fa-brands fa-github gh-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
